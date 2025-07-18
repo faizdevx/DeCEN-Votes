@@ -121,9 +121,6 @@ Vote integrity is maintained through cryptographic hashes; no mining or public n
 └── README.md
 ```
 
-## 📜 License
-
-MIT License – Free for any use, fork, or contribution.
 
 ## 🙋‍♂️ Author
 
