@@ -127,8 +127,7 @@ MIT License – Free for any use, fork, or contribution.
 
 ## 🙋‍♂️ Author
 
-Built with ❤️ by **Faizal** | CSE-AI Engineer  
-Website: *coming soon*
+Built with ❤️ by **Faizal** | CSE-AI UnderGrad
 
 ## 🏁 Status
 
