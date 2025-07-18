@@ -1,0 +1,21 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org">
+<head><title>Blockchain</title>
+<style>
+body{font-family:Arial;background:#f2f5ff}
+.block{background:#fff;margin:10px;padding:12px;border-radius:6px;box-shadow:0 1px 4px #aaa}
+</style></head>
+<body>
+<h3>Welcome, <span th:text="${user}"></span> |
+<a th:href="@{/vote}">Vote</a> |
+<a th:href="@{/results}">Results</a> |
+<form th:action="@{/logout}" method="post" style="display:inline"><button>Logout</button></form>
+</h3>
+<p>Chain valid: <b th:text="${isValid}">true</b></p>
+<div th:each="b : ${blocks}" class="block">
+  <div><b>Index:</b> <span th:text="${b.index}"></span></div>
+  <div><b>Time :</b> <span th:text="${#dates.format(b.timestamp,'yyyy-MM-dd HH:mm:ss')}"></span></div>
+  <div><b>Data :</b> <span th:text="${b.data}"></span></div>
+  <div><b>Prev :</b> <span th:text="${b.previousHash}"></span></div>
+  <div><b>Hash :</b> <span th:text="${b.hash}"></span></div>
+</div>
+</body></html>

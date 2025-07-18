@@ -1,0 +1,16 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org">
+<head><title>Results</title>
+<style>body{font-family:Arial;text-align:center;margin-top:60px}</style></head>
+<body>
+<h2>Live Results</h2>
+<table border="1" style="margin:auto">
+<tr><th>Candidate</th><th>Votes</th></tr>
+<tr th:each="e : ${tally}">
+  <td th:text="${e.key}"></td>
+  <td th:text="${e.value}"></td>
+</tr>
+</table>
+<p>Total votes: <span th:text="${total}"></span></p>
+<p>Chain valid: <span th:text="${valid}"></span></p>
+<p><a th:href="@{/blockchain}">Back</a></p>
+</body></html>

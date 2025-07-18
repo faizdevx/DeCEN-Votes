@@ -1,0 +1,17 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org">
+<head><title>Vote</title>
+<style>body{font-family:Arial;text-align:center;margin-top:60px}</style></head>
+<body>
+<h2>Cast Your Vote</h2>
+<div th:if="${already}">
+  <p style="color:green" th:if="${msg}" th:text="${msg}"></p>
+  <p style="color:red"   th:if="${err}" th:text="${err}"></p>
+  <p><a th:href="@{/blockchain}">Back</a></p>
+</div>
+<form th:if="${!already}" th:action="@{/vote}" method="post">
+  <select name="candidate" required>
+    <option th:each="c : ${candidates}" th:value="${c}" th:text="${c}"></option>
+  </select><br/><br/>
+  <button type="submit">Submit</button>
+</form>
+</body></html>
