@@ -136,55 +136,16 @@ Further enhancements (wallets, Aadhaar/voter ID, face/biometric verification, mo
 
 ## FEATURES IN PROCESS
 
-1. Decentralized Identity & Private Authentication
-Given the restrictions on direct API access to sensitive government databases like Aadhaar and Voter ID for small repositories, our system will implement a robust and privacy-preserving authentication mechanism:
+Decentralized Identity (Zero-Knowledge Proofs): Secure, private voter authentication without traditional IDs.
 
-Multi-Factor Authentication (MFA): Users will authenticate using multiple factors to enhance security.
+Automated Smart Contract: Authoritative contract for election process and automatic result publication.
 
-Decentralized Identity (DID) with Zero-Knowledge Proofs (ZKPs): Voters will be able to prove their eligibility (e.g., that they are a registered voter and meet age requirements) without revealing their actual identity or sensitive personal information to the application or third parties. This leverages Zero-Knowledge Proofs to ensure privacy while maintaining verifiability.
+Verifiable & Private Voting: Voters verify their vote without revealing their choice.
 
-2. Authoritative Smart Contract for Election Automation
-At the core of the election system is a smart contract designed to automate and enforce the election process:
+Docker Deployment: Ensures consistent, portable, and scalable application deployment.
 
-Automated Election Lifecycle: An authoritative smart contract will govern the entire election process, from registration to result declaration.
+Enhanced Admin Features:
 
-Automatic Result Calculation & Publication: When polls officially close, the smart contract will automatically calculate the final election results based on the recorded votes and immutably publish them on the blockchain, ensuring transparency and preventing tampering.
+Election management (start/end, candidates, analytics).
 
-3. Verifiable Voting with Privacy
-Voter trust is paramount. Our system ensures that voters can independently verify their vote while maintaining their privacy:
-
-Individual Vote Verification: Each voter will receive a unique cryptographic receipt or identifier upon casting their vote. They can use this to verify that their vote was indeed recorded on the blockchain.
-
-Zero-Knowledge Proofs for Choice Privacy: The verification process will allow voters to confirm their vote's inclusion and accuracy without revealing their specific choice to any third party, including the election administrators or other voters. This preserves the secrecy of the ballot.
-
-4. Docker Deployment
-The entire application, including the Spring Boot backend and any associated blockchain nodes, will be deployed using Docker. This approach offers significant benefits:
-
-Consistency: Ensures the application runs identically across development, testing, and production environments.
-
-Portability: Simplifies deployment across various cloud providers or on-premises infrastructure.
-
-Scalability: Facilitates easy scaling of application components and blockchain nodes as needed.
-
-Isolation: Provides a clean, isolated environment for each component, preventing conflicts.
-
-5. Enhanced Administrative Features
-The system will provide comprehensive tools for election administrators:
-
-Election Event Management:
-
-Start/End Elections: Admins can initiate and conclude election periods.
-
-Candidate Management: Tools to add, modify, or remove candidates.
-
-Participation Analytics: Real-time dashboards showing voter turnout and engagement.
-
-Validator Health Monitoring: Overview of the health and status of blockchain validator nodes (if applicable to the chosen blockchain architecture).
-
-Automated Reporting & Analytics:
-
-Downloadable Reports: Generate and download detailed election reports.
-
-Advanced Graphs: Visualizations of voting trends, participation rates, and other key metrics.
-
-Anomaly Detection (AI/ML): Integration of Artificial Intelligence and Machine Learning models to detect unusual voting patterns or potential fraud attempts, providing alerts to administrators.
+Automated reporting, graphs, and AI/ML for fraud detection.
