@@ -133,3 +133,14 @@ The current system demonstrates blockchain-based vote recording, one-vote user e
 Further enhancements (wallets, Aadhaar/voter ID, face/biometric verification, mobile, public-chain sync, etc.) are outlined for future roadmaps.
 
 **Enjoy transparent, tamper-proof, auditable e-voting!**
+
+## FEATURES IN PROCESS
+
+1)GETTING API OF ADHAR AND VOTER ID IS IMPOSSIBLE FOR MY SMALL REPOSITORY SO I BE HANDLING AUTHENTICATION WITH MULTI-FACTOR AUTHENTICATION GIVING YOU DECENTRALIZED IDENTITY(Zero-Knowledge Proofs)
+2)ADD A SMART CONTRACT THAT AUTOMATE WHOLE PROCESS OF ELECTION authoritative smart contracts that automatically calculate and publish results when polls close
+3)Allow voters to verify their vote was counted as cast, without revealing their choice to third parties
+4) deploy on docker 
+5)Enhanced Admin Features
+Election Event Management: Admins can start/end elections, manage candidates, view participation analytics, and monitor validator health.
+
+Automated Reporting & Analytics: Provide downloadable reports, advanced graphs, and anomaly detection using AI/ML for fraud monitoring
