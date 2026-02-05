@@ -149,3 +149,4 @@ Enhanced Admin Features:
 Election management (start/end, candidates, analytics).
 
 Automated reporting, graphs, and AI/ML for fraud detection.
+pair extraordinaire
